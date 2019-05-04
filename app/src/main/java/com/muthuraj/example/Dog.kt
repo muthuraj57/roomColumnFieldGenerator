@@ -13,15 +13,22 @@ import androidx.room.PrimaryKey
  */
 @Entity(tableName = "DogTable")
 data class Dog(
+
     @PrimaryKey
+    @ColumnInfo(name = DogTableFields.NAME)
     val id: String = "",
+
+    @ColumnInfo(name = DogTableFields.ID)
     val name: String = ""
 )
 
 @Entity
 class Test{
+
     @ColumnInfo(name = TestFields.FIELD1)
     var field1: String = ""
+
+    @ColumnInfo(name = TestFields.FIELD_TWO)
     var fieldTwo: Int = -1
 
     @delegate:Ignore
