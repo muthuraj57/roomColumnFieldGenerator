@@ -15,7 +15,8 @@ class Test {
 
 following Kotlin class is generated.
 
-```object TestFields {
+```
+object TestFields {
     const val FIELD1: String = "field1"
 
     const val FIELD_TWO: String = "fieldTwo"
