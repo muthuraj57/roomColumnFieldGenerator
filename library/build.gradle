@@ -1,0 +1,55 @@
+apply plugin: 'kotlin'
+apply plugin: 'java'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.muthuraj57'
+
+dependencies {
+    implementation 'com.squareup:kotlinpoet:1.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+task javadocJar(type: Jar, dependsOn: 'javadoc') {
+    from javadoc.destinationDir
+    classifier = 'javadoc'
+}
+task sourcesJar(type: Jar, dependsOn: 'classes') {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+//task checkstyle(type: Checkstyle) {
+//    source 'src'
+//    include '**/*.java'
+//    exclude '**/gen/**'
+//    exclude '**/R.java'
+//    exclude '**/BuildConfig.java'
+//
+////    def configProps = ['proj.module.dir': projectDir.absolutePath]
+////    configProperties configProps
+//
+//    // empty classpath
+//    classpath = files()
+//}
+
+task deleteJar(type: Delete) {
+    delete 'libs/jars/room-column-field-generator.jar'
+}
+
+task createJar(type: Copy) {
+    from('build/intermediates/bundles/release/')
+    into('libs/jars/')
+    include('classes.jar')
+    rename('classes.jar', 'room-column-field-generator.jar')
+}
+
+createJar.dependsOn(deleteJar, build)
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+}
