@@ -6,9 +6,6 @@ import java.util.*
 /**
  * Created by Muthuraj on 2019-04-22.
  *
- * Jambav, Zoho Corporation
- */
-/**
  * Class responsible for keeping track of the metadata for each Realm model class.
  */
 class ClassData(

@@ -7,8 +7,6 @@ import androidx.room.Room
 
 /**
  * Created by Muthuraj on 2019-04-22.
- *
- * Jambav, Zoho Corporation
  */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

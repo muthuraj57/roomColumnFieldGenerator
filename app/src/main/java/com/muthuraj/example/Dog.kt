@@ -1,6 +1,7 @@
 /* $Id$ */
 package com.muthuraj.example
 
+import androidx.room.ColumnInfo
 import androidx.room.Dao
 import androidx.room.Entity
 import androidx.room.Ignore
@@ -9,8 +10,6 @@ import androidx.room.PrimaryKey
 
 /**
  * Created by Muthuraj on 2019-04-22.
- *
- * Jambav, Zoho Corporation
  */
 @Entity(tableName = "DogTable")
 data class Dog(
@@ -21,6 +20,7 @@ data class Dog(
 
 @Entity
 class Test{
+    @ColumnInfo(name = TestFields.FIELD1)
     var field1: String = ""
     var fieldTwo: Int = -1
 

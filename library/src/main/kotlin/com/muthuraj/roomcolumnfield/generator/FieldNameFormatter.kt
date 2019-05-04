@@ -6,9 +6,6 @@ import java.util.*
 /**
  * Created by Muthuraj on 2019-04-22.
  *
- * Jambav, Zoho Corporation
- */
-/**
  * Class for encapsulating the rules for converting between the field name in the Room model class
  * and the matching name in the "&lt;class&gt;Fields" class.
  */

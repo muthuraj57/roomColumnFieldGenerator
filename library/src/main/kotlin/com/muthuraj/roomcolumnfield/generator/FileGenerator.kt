@@ -11,9 +11,6 @@ import javax.annotation.processing.Filer
 /**
  * Created by Muthuraj on 2019-04-22.
  *
- * Jambav, Zoho Corporation
- */
-/**
  * Class responsible for creating the final output files.
  */
 class FileGenerator(private val filer: Filer) {

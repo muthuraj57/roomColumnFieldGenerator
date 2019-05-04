@@ -20,8 +20,6 @@ import javax.tools.Diagnostic
 
 /**
  * Created by Muthuraj on 2019-04-22.
- *
- * Jambav, Zoho Corporation
  */
 @SupportedAnnotationTypes("androidx.room.Entity")
 class RoomColumnProcessor : AbstractProcessor() {
