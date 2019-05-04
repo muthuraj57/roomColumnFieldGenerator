@@ -6,7 +6,8 @@ Inspired from [RealmFieldNamesHelper](https://github.com/cmelchior/realmfieldnam
 This is an annotation processor which detects all Room Entites and generates a Kotlin class for each Entity with fields 
 representing Column names. For example, for the following Entity,
 
-```@Entity
+```
+@Entity
 class Test {
     var field1: String = ""
     var fieldTwo: Int = -1
