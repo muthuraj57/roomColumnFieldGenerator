@@ -47,6 +47,10 @@ var field1: String = ""
 var field1: String = ""
  ```
  
+ Some other interesting use cases are, you can use the generted const fields in 
+ * @ForeignKey [`parentColumns`](https://github.com/muthuraj57/roomColumnFieldGenerator/blob/3734eb1780cb3eb1ecd1a05ff22d8ae96ad0d302/app/src/main/java/com/muthuraj/example/User.kt#L27) and [`childColumns`](https://github.com/muthuraj57/roomColumnFieldGenerator/blob/3734eb1780cb3eb1ecd1a05ff22d8ae96ad0d302/app/src/main/java/com/muthuraj/example/User.kt#L28)
+ * @ColumnInfo [`name`](https://github.com/muthuraj57/roomColumnFieldGenerator/blob/a77a98fb71af3583c158bf0e1b85d63f2f1f4df5/app/src/main/java/com/muthuraj/example/User.kt#L40) for POJO classes to [return subset of columns](https://developer.android.com/training/data-storage/room/accessing-data#query-subset-cols)
+ 
  ## Installation
  
  **Step 1:** Add this in your root *build.gradle* at the end of repositories:
