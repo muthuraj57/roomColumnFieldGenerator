@@ -1,4 +1,4 @@
-# roomColumnFieldGenerator
+# roomColumnFieldGenerator (Work In Progress)
 
 Inspired from [RealmFieldNamesHelper](https://github.com/cmelchior/realmfieldnameshelper)
 
