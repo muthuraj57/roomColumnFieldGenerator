@@ -67,5 +67,7 @@ var field1: String = ""
 	}
   ```
   
+  **Step 3:** Sync and Run/Rebuild the project. Kolin helper classes would have been generated for all Entities now.
+  
   ### Note:
   This library creates Kotlin files, so Kotlin should be enabled in your project.
