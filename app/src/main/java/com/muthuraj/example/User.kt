@@ -24,8 +24,8 @@ data class UserEntity(
     foreignKeys = [
         ForeignKey(
             entity = UserEntity::class,
-            parentColumns = ["id"],
-            childColumns = ["user"],
+            parentColumns = [UserFields.ID],
+            childColumns = [UserDetailsFields.USER],
             onDelete = ForeignKey.CASCADE
         )]
 )
