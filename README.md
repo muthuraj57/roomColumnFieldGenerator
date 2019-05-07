@@ -2,6 +2,9 @@
 
 Inspired from [RealmFieldNamesHelper](https://github.com/cmelchior/realmfieldnameshelper)
 
+### Update
+This library doesn't work with clean build, sadly. Will try to fix and make it work when I have time. May be you can help me out? https://stackoverflow.com/questions/55995947/how-to-make-my-custom-annotation-processor-for-room-entities-run-before-room-ann
+
 ## What does it do?
 This is an annotation processor which detects all Room Entites and generates a Kotlin class for each Entity with fields 
 representing Column names. For example, for the following Entity,
